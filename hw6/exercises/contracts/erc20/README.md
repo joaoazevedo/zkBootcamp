@@ -6,7 +6,7 @@ Several features need to be added to improve existing functionality.
 
 Tests will run against any implementations.
 
-**Warning**: Tests are going to show compilation errors at the beggning. You have to fix it.
+**Warning**: Tests are going to show compilation errors at the beginning. You have to fix it.
 
 You should modify **ONLY** the file `erc20.cairo` in `exercises/contracts/`.
 
@@ -24,13 +24,13 @@ Users may require some of the test tokens for development.
 
 Implement function `faucet()` that will mint specified amount to the caller.
 
-As tokens are (potentially) valuable, cap the maximum amount to be minted and transfered per invocation to 10,000.
+As tokens are (potentially) valuable, cap the maximum amount to be minted and transferred per invocation to 10,000.
 
 #### Burn haircut
 
 Sometimes tokens need to be burned, but there is no reason not to keep some as the contract deployer.
 
-Implement a funcion `burn()` that will:
+Implement a function `burn()` that will:
 
 - take 10% of the amount to be burned and send it to the address of the deployer/admin
 - burn the rest
